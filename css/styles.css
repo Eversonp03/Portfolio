@@ -1,0 +1,346 @@
+html {
+  scroll-behavior: smooth;
+}
+/* -------- geral -------- */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #dcdcdc;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+h1 {
+  border-right: 2px solid rgb(255, 255, 255, .75);
+  color: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  /*  text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);*/
+}
+
+/* -------- navbar -------- */
+#navbar {
+  background-color: #4f9799;
+  background: linear-gradient(5deg, #000000, #000000, #4f9799);
+  color: #fff;
+  padding: 0 15px;
+  height: 60px;
+}
+
+#navbar h2,
+#navbar ul,
+#navbar-list li,
+#navbar nav {
+  display: inline-block;
+}
+
+#navbar h2 {
+  margin: 0;
+  line-height: 60px;
+  margin-left: 55px;
+}
+
+#navbar img {
+  height: 40px;
+  position: absolute;
+  top: 10px;
+}
+
+#navbar img:hover {
+  transform: scale(1.1);
+}
+
+#navbar nav {
+  float: right;
+}
+
+#navbar ul {
+  margin-top: 22px;
+}
+
+#navbar li {
+  margin: 0 10px;
+}
+
+#navbar-list li a {
+  text-decoration: none;
+  /*retira o anderline*/
+  color: #fff;
+}
+
+#navbar-list li a:hover {
+  border-bottom: 1px solid #FFF;
+}
+
+/* -------- banner -------- */
+
+#main-banner {
+  width: 100%;
+  height: 70vh;
+  background-image: url('../img/Everson.jpg');
+  background-size: cover;
+  padding-top: 15vh;
+}
+
+#banner-info {
+  width: 40%;
+  margin-top: 150px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+#banner-info p {
+  margin-top: -20px;
+  color: #4f9799;
+  text-align: 100px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+/* -------- Inicio Animação main-banner p -------- */
+.animationP {
+  animation: developer 4s steps(40) 4s normal both;
+}
+
+@keyframes developer {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 13em;
+  }
+}
+
+/*-------- Fim Animação main-banner p -------- */
+
+/* -------- Inicio Animação h1 -------- */
+.animation {
+  animation: blinkCursor 500ms steps(40) infinite normal,
+    typing 4s steps(40) 0.5s normal both;
+}
+
+/* -------- animação do texto -------- */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 13em;
+  }
+}
+
+/* -------- piscar o cursor --------*/
+@keyframes blinkCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* -------- Fim animação h1 -------- */
+
+/* -------- about --------*/
+#about-section {
+  text-align: center;
+  background: linear-gradient(#000000, #242323, #666666, #dcdcdc);
+  color: #FFF;
+  padding-top: 100px;
+  height: 700px;
+}
+
+#about-section .sobre {
+  margin-top: 50px;
+  width: 65%;
+  padding: 25px 25px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px #DDD;
+  border-style: ridge;
+  border-radius: 10px;
+  border-top: 1px solid #4f9799;
+  border-left: 1px solid #4f9799;
+  border-bottom: 4px solid #4f9799;
+  border-right: 4px solid #4f9799;
+}
+
+#about-section h2 {
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+#about-section p {
+  max-width: 650px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 30px;
+}
+
+/* -------- skills --------*/
+#skills-section {
+  margin-top: -200px;
+  background-color: #FFF;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid rgb(131, 131, 131);
+  border-radius: 10px;
+}
+
+#skills-section .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.skills-container {
+  flex: 1 1 1;
+  text-align: center;
+  padding: 60px 25px;
+}
+
+.central {
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+}
+
+.skills-container h3 {
+  color: #4f9799;
+  font-size: 20px;
+}
+
+.skills-container img {
+  height: 60px;
+  padding: 15px;
+  margin-bottom: 25px;
+  border-top: 1px solid #4f9799;
+  border-left: 1px solid #4f9799;
+  border-bottom: 4px solid #4f9799;
+  border-right: 4px solid #4f9799;
+}
+
+.skills-container .subtitle {
+  font-weight: bold;
+  color: #4f9799;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  ;
+}
+
+.skills-container p {
+  line-height: 25px
+}
+
+.puxa-cima {
+  margin-top: -1%;
+}
+
+/* -------- jobs --------*/
+#jobs-section {
+  background-color: #dcdcdc;
+  text-align: center;
+  padding-top: -50px;
+}
+
+#job-sectionh2 {
+  color: #2e7f8d;
+  margin-bottom: 30px;
+}
+
+#jobs-section p {
+  margin-bottom: 50px;
+}
+
+#jobs-section a {
+  font-weight: bold;
+  color: #881d1d;
+}
+
+.jobs-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.job-box {
+  flex: 1 1 200px;
+  margin-left: 25px;
+  margin-right: 25px;
+  height: 300px;
+  background-size: cover;
+  border-right: 3px solid #4f9799;
+  border-bottom: 3px solid #4f9799;
+}
+
+.proj1 {
+  background-image: url('../img/templates1.jpg');
+}
+
+.proj2 {
+  background-image: url('../img/templates2.jpg');
+}
+
+.proj3 {
+  background-image: url('../img/templates3.jpg');
+}
+
+/* -------- foofter -------- */
+footer {
+  padding: 5px 0;
+  background-color: #83b4b6;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: -100px;
+}
+
+footer h2 {
+  padding: -10px;
+}
+
+footer img {
+  height: 150px;
+  margin: 10px 5px 5px;
+}
+
+footer p {
+  margin-top: 20px;
+}
+
+footer form {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer input,
+footer textarea {
+  border: none;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  width: 100%;
+  display: block;
+  outline: none;
+  height: auto;
+}
+
+footer .detail {
+  font-weight: bold;
+}
